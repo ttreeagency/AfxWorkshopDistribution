@@ -2,11 +2,28 @@ prototype(Ttree.AfxWorkshop:Component.Molecule.DocumentLoader) < prototype(Neos.
     @styleguide {
         title = 'Document Loader'
         description = 'Use this component to commicate that\'s something is happening and make the user a bit less in the unknown'
+
+        props {
+            circleColor = '#FDA04F'
+        }
+
+        propSets {
+            'Light Blue' {
+                circleColor = '#90caf9'
+            }
+            'Deep Purple' {
+                circleColor = '#b39ddb'
+            }
+        }
     }
+
+    circleColor = '#FDA04F'
 
     renderer = afx`
         <div id="pb_loader" class="show fullscreen">
-            <Ttree.AfxWorkshop:Component.Atom.Circle />
+            <Ttree.AfxWorkshop:Component.Atom.Circle
+                circleColor={props.circleColor}
+            />
         </div>
     `
 }
