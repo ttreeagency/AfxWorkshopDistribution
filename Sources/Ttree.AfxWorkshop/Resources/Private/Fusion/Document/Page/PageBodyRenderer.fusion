@@ -1,0 +1,10 @@
+prototype(Ttree.AfxWorkshop:Document.PageBodyRenderer) < prototype(Neos.Fusion:Case) {
+    finder {
+        condition = Ttree.Fusion:CanRender {
+            type = ${q(node).property('_nodeType') + 'Body'}
+        }
+        type = ${q(node).property('_nodeType') + 'Body'}
+    }
+
+    default = Ttree.AfxWorkshop:Document.PageBody
+}

@@ -1,0 +1,23 @@
+{
+    "name": "ttree/afxworkshop",
+    "description": "A base website package the AFX Workshop",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "~3.3.0",
+        "sitegeist/monocle": "~4.0",
+        "neos/fusion-afx": "~1.0",
+        "neos/neos-ui": "~1.0",
+        "neos/neos-ui-compiled": "~1.0",
+        "ttree/fusion-documentfinder": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ttree\\AfxWorkshop\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "Ttree.AfxWorkshop"
+        }
+    }
+}

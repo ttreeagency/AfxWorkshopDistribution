@@ -1,0 +1,6 @@
+Ttree:
+  Fusion:
+    DocumentFinder:
+      documentPrototype:
+        fallback: Ttree.AfxWorkshop:Document.PageTemplate
+        suffix: Template

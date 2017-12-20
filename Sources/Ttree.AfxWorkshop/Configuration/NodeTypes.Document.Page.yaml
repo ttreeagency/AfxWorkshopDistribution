@@ -1,0 +1,9 @@
+Ttree.AfxWorkshop:Document.Page:
+  superTypes:
+    Ttree.AfxWorkshop:Document: true
+  ui:
+    label: 'Page'
+    icon: icon-file-text
+  childNodes:
+    main:
+      type: Neos.Neos:ContentCollection

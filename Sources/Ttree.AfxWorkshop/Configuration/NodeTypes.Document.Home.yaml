@@ -1,0 +1,9 @@
+Ttree.AfxWorkshop:Document.Home:
+  superTypes:
+    Ttree.AfxWorkshop:Document: true
+  ui:
+    label: 'Home'
+    icon: icon-home
+  childNodes:
+    main:
+      type: Neos.Neos:ContentCollection

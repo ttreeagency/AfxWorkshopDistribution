@@ -1,0 +1,42 @@
+version: "2"
+
+services:
+
+  database:
+    image: sameersbn/postgresql:9.6-2
+    ports:
+      - "5432:5432"
+    environment:
+      - DEBUG=false
+
+      - DB_USER=main
+      - DB_PASS=main
+      - DB_NAME=main
+
+    volumes:
+      - databaseData:/var/lib/postgresql
+
+  beanstalkd:
+    image: chriskite/beanstalkd
+    ports:
+      - "11300:11300"
+
+  redis:
+    image: redis:3.0
+    ports:
+      - "6379:6379"
+
+  elasticsearch:
+    image: elasticsearch:1.7-alpine
+    command: elasticsearch -Des.logger.level=DEBUG
+    ports:
+      - "9200:9200"
+    volumes:
+      - ./Build/Docker/ElasticSearch/config:/usr/share/elasticsearch/config
+      - elasticsearchData:/data
+
+volumes:
+  databaseData:
+    driver: local
+  elasticsearchData:
+    driver: local

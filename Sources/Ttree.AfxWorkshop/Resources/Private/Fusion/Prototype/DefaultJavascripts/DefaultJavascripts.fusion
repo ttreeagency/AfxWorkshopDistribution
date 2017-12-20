@@ -1,0 +1,6 @@
+prototype(Ttree.AfxWorkshop:Prototype.DefaultJavascripts) < prototype(Neos.Fusion:Array) {
+    site = Neos.Fusion:Template {
+        templatePath = 'resource://Ttree.AfxWorkshop/Private/Templates/Page/Default.html'
+        sectionName = 'headScripts'
+    }
+}

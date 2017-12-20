@@ -1,0 +1,9 @@
+prototype(Ttree.AfxWorkshop:Document.PageTemplate) < prototype(Neos.Neos:Page) {
+    head {
+        stylesheets.site = Ttree.AfxWorkshop:Prototype.DefaultStylesheets
+
+        javascripts.site = Ttree.AfxWorkshop:Prototype.DefaultJavascripts
+    }
+
+    body = Ttree.AfxWorkshop:Document.PageBodyRenderer
+}
