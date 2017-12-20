@@ -1,7 +1,12 @@
 prototype(Ttree.AfxWorkshop:Component.Molecule.DocumentLoader) < prototype(Neos.Fusion:Component) {
+    @styleguide {
+        title = 'Document Loader'
+        description = 'Use this component to commicate that\'s something is happening and make the user a bit less in the unknown'
+    }
+
     renderer = afx`
         <div id="pb_loader" class="show fullscreen">
-            <Ttree.AfxWorkshop:Component.Atom.SpinningCircle />
+            <Ttree.AfxWorkshop:Component.Atom.Circle />
         </div>
     `
 }

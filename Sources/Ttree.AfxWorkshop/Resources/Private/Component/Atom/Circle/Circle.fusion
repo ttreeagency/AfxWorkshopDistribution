@@ -1,0 +1,15 @@
+prototype(Ttree.AfxWorkshop:Component.Atom.Circle) < prototype(Neos.Fusion:Component) {
+    @styleguide {
+        title = 'Circle'
+    }
+
+    backgroundColor = '#eeeeee'
+    circleColor = '#FDA04F'
+
+    renderer = afx`
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke={props.backgroundColor} @key="background"/>
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke={props.circleColor} @key="circle"/>
+        </svg>
+    `
+}

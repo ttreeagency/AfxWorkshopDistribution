@@ -1,0 +1,5 @@
+prototype(Sitegeist.Monocle:Preview.Page) {
+    head {
+        stylesheets = Ttree.AfxWorkshop:Prototype.DefaultStylesheets
+    }
+}
