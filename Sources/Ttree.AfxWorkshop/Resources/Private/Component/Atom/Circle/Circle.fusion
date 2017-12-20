@@ -1,6 +1,22 @@
 prototype(Ttree.AfxWorkshop:Component.Atom.Circle) < prototype(Neos.Fusion:Component) {
     @styleguide {
         title = 'Circle'
+
+        props {
+            backgroundColor = '#eeeeee'
+            circleColor = '#FDA04F'
+        }
+
+        propSets {
+            'Light Blue' {
+                backgroundColor = '#eeeeee'
+                circleColor = '#90caf9'
+            }
+            'Deep Purple' {
+                backgroundColor = '#eeeeee'
+                circleColor = '#b39ddb'
+            }
+        }
     }
 
     backgroundColor = '#eeeeee'
