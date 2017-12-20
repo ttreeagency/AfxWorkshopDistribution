@@ -1,0 +1,18 @@
+prototype(Ttree.AfxWorkshop:Component.Atom.Button) < prototype(Neos.Fusion:Component) {
+    @styleguide {
+        title = 'Button'
+
+        props {
+            label = 'Get Started'
+        }
+    }
+
+    label = null
+    uri = '#'
+
+    renderer = afx`
+        <a href={props.uri} role="button" class="btn smoothscroll pb_outline-light p-3 rounded-0 pb_font-13 pb_letter-spacing-2">
+            {props.label}
+        </a>
+    `
+}
