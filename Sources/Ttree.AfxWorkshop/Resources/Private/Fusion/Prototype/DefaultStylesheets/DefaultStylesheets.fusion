@@ -1,5 +1,5 @@
 prototype(Ttree.AfxWorkshop:Prototype.DefaultStylesheets) < prototype(Neos.Fusion:Array) {
-    fonts = Ttree.Script:External {
+    fonts = Ttree.StyleSheet:External {
         uri = 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400'
     }
     bootstrap = Ttree.StyleSheet:Resource {
