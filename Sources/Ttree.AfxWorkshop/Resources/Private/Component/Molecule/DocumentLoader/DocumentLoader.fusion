@@ -5,6 +5,7 @@ prototype(Ttree.AfxWorkshop:Component.Molecule.DocumentLoader) < prototype(Neos.
 
         props {
             circleColor = '#FDA04F'
+            fat = false
         }
 
         propSets {
@@ -18,12 +19,14 @@ prototype(Ttree.AfxWorkshop:Component.Molecule.DocumentLoader) < prototype(Neos.
     }
 
     circleColor = '#FDA04F'
+    fat = false
 
     renderer = afx`
         <div id="pb_loader" class="show fullscreen">
             <Neos.Fusion:Augmenter class="circular">
                 <Ttree.AfxWorkshop:Component.Atom.Circle
                     circleColor={props.circleColor}
+                    strokeWidth={props.fat ? '8' : '4'}
                 />
             </Neos.Fusion:Augmenter>
         </div>
