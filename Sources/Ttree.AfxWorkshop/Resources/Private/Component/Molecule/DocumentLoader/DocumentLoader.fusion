@@ -21,9 +21,11 @@ prototype(Ttree.AfxWorkshop:Component.Molecule.DocumentLoader) < prototype(Neos.
 
     renderer = afx`
         <div id="pb_loader" class="show fullscreen">
-            <Ttree.AfxWorkshop:Component.Atom.Circle
-                circleColor={props.circleColor}
-            />
+            <Neos.Fusion:Augmenter class="circular">
+                <Ttree.AfxWorkshop:Component.Atom.Circle
+                    circleColor={props.circleColor}
+                />
+            </Neos.Fusion:Augmenter>
         </div>
     `
 }
