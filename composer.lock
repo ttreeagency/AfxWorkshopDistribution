@@ -3513,7 +3513,7 @@
             "dist": {
                 "type": "path",
                 "url": "Sources/Ttree.AfxWorkshop",
-                "reference": "c30980cd4611b542d3e74c517d12538dd9af7e03",
+                "reference": "ad8ada219da37e42f61085099af56a1bb7e8f385",
                 "shasum": null
             },
             "require": {
@@ -3522,6 +3522,7 @@
                 "neos/neos-ui": "~1.0",
                 "neos/neos-ui-compiled": "~1.0",
                 "sitegeist/monocle": "~4.0",
+                "ttree/componentsentinel": "^1.0",
                 "ttree/fusion-documentfinder": "~1.0",
                 "ttree/script": "~3.0",
                 "ttree/stylesheet": "~3.0"
@@ -3538,6 +3539,41 @@
                 }
             },
             "description": "A base website package the AFX Workshop"
+        },
+        {
+            "name": "ttree/componentsentinel",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ttreeagency/ComponentSentinel.git",
+                "reference": "14613ebb334bd4c8f319a6a0534dac55502d4e05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ttreeagency/ComponentSentinel/zipball/14613ebb334bd4c8f319a6a0534dac55502d4e05",
+                "reference": "14613ebb334bd4c8f319a6a0534dac55502d4e05",
+                "shasum": ""
+            },
+            "require": {
+                "neos/flow": "^4.0"
+            },
+            "type": "neos-package",
+            "extra": {
+                "neos": {
+                    "package-key": "Ttree.ComponentSentinel"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ttree\\ComponentSentinel\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Helper package to support our internal agency component based architecture",
+            "time": "2017-11-23T16:07:56+00:00"
         },
         {
             "name": "ttree/eel-filereader",
