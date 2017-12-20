@@ -1,6 +1,23 @@
 prototype(Ttree.AfxWorkshop:Prototype.DefaultJavascripts) < prototype(Neos.Fusion:Array) {
-    site = Neos.Fusion:Template {
-        templatePath = 'resource://Ttree.AfxWorkshop/Private/Templates/Page/Default.html'
-        sectionName = 'headScripts'
+    jquery = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/jquery.min.js'
+    }
+    popper = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/popper.min.js'
+    }
+    bootstrap = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/bootstrap.min.js'
+    }
+    slick = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/slick.min.js'
+    }
+    jqueryWaypoints = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/jquery.waypoints.min.js'
+    }
+    jqueryEasing = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/jquery.easing.1.3.js'
+    }
+    main = Ttree.Script:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/JavaScript/main.js'
     }
 }

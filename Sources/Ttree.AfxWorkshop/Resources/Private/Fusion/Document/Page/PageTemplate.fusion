@@ -1,9 +1,11 @@
 prototype(Ttree.AfxWorkshop:Document.PageTemplate) < prototype(Neos.Neos:Page) {
     head {
-        stylesheets.site = Ttree.AfxWorkshop:Prototype.DefaultStylesheets
-
-        javascripts.site = Ttree.AfxWorkshop:Prototype.DefaultJavascripts
+        stylesheets = Ttree.AfxWorkshop:Prototype.DefaultStylesheets
     }
 
     body = Ttree.AfxWorkshop:Document.PageBodyRenderer
+
+    javascript = Ttree.AfxWorkshop:Prototype.DefaultJavascripts {
+        @position = 'after body'
+    }
 }

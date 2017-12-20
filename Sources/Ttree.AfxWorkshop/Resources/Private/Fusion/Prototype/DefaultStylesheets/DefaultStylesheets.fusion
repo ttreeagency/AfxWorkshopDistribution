@@ -1,6 +1,29 @@
 prototype(Ttree.AfxWorkshop:Prototype.DefaultStylesheets) < prototype(Neos.Fusion:Array) {
-    site = Neos.Fusion:Template {
-        templatePath = 'resource://Ttree.AfxWorkshop/Private/Templates/Page/Default.html'
-        sectionName = 'stylesheets'
+    fonts = Ttree.Script:External {
+        uri = 'https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400'
+    }
+    bootstrap = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Styles/bootstrap/bootstrap.css'
+    }
+    ionicons = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Fonts/ionicons/css/ionicons.min.css'
+    }
+    lawicons = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Fonts/law-icons/font/flaticon.css'
+    }
+    fontawesome = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Fonts/fontawesome/css/font-awesome.min.css'
+    }
+    slick = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Styles/slick.css'
+    }
+    slickTheme = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Styles/slick-theme.css'
+    }
+    helpers = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Styles/helpers.css'
+    }
+    style = Ttree.StyleSheet:Resource {
+        uri = 'resource://Ttree.AfxWorkshop/Public/Styles/style.css'
     }
 }

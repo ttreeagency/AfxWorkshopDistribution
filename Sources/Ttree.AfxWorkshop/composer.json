@@ -8,7 +8,9 @@
         "neos/fusion-afx": "~1.0",
         "neos/neos-ui": "~1.0",
         "neos/neos-ui-compiled": "~1.0",
-        "ttree/fusion-documentfinder": "^1.0"
+        "ttree/fusion-documentfinder": "~1.0",
+        "ttree/stylesheet": "~3.0",
+        "ttree/script": "~3.0"
     },
     "autoload": {
         "psr-4": {
