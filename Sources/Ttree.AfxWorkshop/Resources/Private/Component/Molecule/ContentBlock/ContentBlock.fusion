@@ -1,0 +1,23 @@
+prototype(Ttree.AfxWorkshop:Component.Molecule.ContentBlock) < prototype(Neos.Fusion:Component) {
+    @styleguide {
+        title = 'Content Block'
+
+        props {
+            content = '<p>Just a simple paragraph ...</p>'
+        }
+
+        propSets {
+            'Headline' {
+                content = '<h1>A main headline</h1>'
+            }
+            'Title' {
+                content = '<h2>A content title</h2>'
+            }
+        }
+    }
+    renderer = afx`
+        <div class="mContentBlock">
+            {props.content}
+        </div>
+    `
+}

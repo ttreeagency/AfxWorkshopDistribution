@@ -1,3 +1,7 @@
 prototype(Ttree.AfxWorkshop:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
-    
+    renderer = Ttree.AfxWorkshop:Component.Molecule.ContentBlock {
+        content = Neos.Neos:Editable {
+            property = 'title'
+        }
+    }
 }

@@ -1,3 +1,7 @@
 prototype(Ttree.AfxWorkshop:Content.Text) < prototype(Neos.Neos:ContentComponent) {
-
+    renderer = Ttree.AfxWorkshop:Component.Molecule.ContentBlock {
+        content = Neos.Neos:Editable {
+            property = 'text'
+        }
+    }
 }
