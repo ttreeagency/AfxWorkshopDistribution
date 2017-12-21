@@ -4,6 +4,10 @@ Ttree.AfxWorkshop:Document.Page:
   ui:
     label: 'Page'
     icon: icon-file-text
+  constraints:
+    nodeTypes:
+      Ttree.AfxWorkshop:Document.Page: true
+      Neos.Neos:Shortcut: true
   childNodes:
     main:
       type: Neos.Neos:ContentCollection

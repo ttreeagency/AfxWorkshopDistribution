@@ -1,0 +1,3 @@
+prototype(Ttree.AfxWorkshop:Content.Headline) < prototype(Neos.Neos:ContentComponent) {
+    
+}

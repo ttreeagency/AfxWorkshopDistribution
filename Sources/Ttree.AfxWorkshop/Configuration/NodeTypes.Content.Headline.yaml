@@ -1,0 +1,8 @@
+Ttree.AfxWorkshop:Content.Headline:
+  superTypes:
+    Ttree.AfxWorkshop:Content: true
+    Neos.NodeTypes.BaseMixins:TitleMixin: true
+  ui:
+    label: 'Headline'
+    icon: icon-header
+    position: 100

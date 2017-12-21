@@ -1,0 +1,7 @@
+Ttree.AfxWorkshop:Content:
+  abstract: true
+  superTypes:
+    Neos.Neos:Content: true
+  options:
+    fusion:
+      prototypeGenerator: Ttree\AfxWorkshop\Domain\Service\DefaultContentPrototypeGenerator

@@ -11,7 +11,8 @@
         "ttree/fusion-documentfinder": "~1.0",
         "ttree/stylesheet": "~3.0",
         "ttree/script": "~3.0",
-        "ttree/componentsentinel": "^1.0"
+        "ttree/componentsentinel": "^1.0",
+        "neos/nodetypes-basemixins": "^3.0"
     },
     "autoload": {
         "psr-4": {

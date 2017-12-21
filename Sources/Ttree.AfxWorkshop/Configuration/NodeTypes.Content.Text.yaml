@@ -1,0 +1,8 @@
+Ttree.AfxWorkshop:Content.Text:
+  superTypes:
+    Ttree.AfxWorkshop:Content: true
+    Neos.NodeTypes.BaseMixins:TextMixin: true
+  ui:
+    label: 'Text'
+    icon: icon-file-text
+    position: 200

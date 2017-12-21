@@ -1,0 +1,3 @@
+prototype(Ttree.AfxWorkshop:Content.Text) < prototype(Neos.Neos:ContentComponent) {
+
+}
