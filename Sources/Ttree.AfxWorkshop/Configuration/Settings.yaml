@@ -20,3 +20,24 @@ Sitegeist:
         label: 'wide'
         width: 800
         height: 600
+
+Neos:
+  Neos:
+    userInterface:
+      editPreviewModes:
+        mobile:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: ''
+          title: 'Mobile'
+          position: 200
+          width: 400px
+          height: 600px
+        tablet:
+          isEditingMode: false
+          isPreviewMode: true
+          fusionRenderingPath: ''
+          title: 'Tablet'
+          position: 210
+          width: 800px
+          height: 600px
